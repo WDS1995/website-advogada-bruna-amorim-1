@@ -1,0 +1,77 @@
+:root {
+    --bg-primary: #3B0A0A;
+    --bg-secondary: #5A0F0F;
+    --accent-primary: #B76E5D;
+    --accent-light: #D19A8B;
+    --shadow-deep: #2A0707;
+    --red-vivid: #7A1C1C;
+    --text-main: #F5EBE0;
+    --text-muted: #C9A99A;
+
+    --surface: rgba(245, 235, 224, 0.05);
+    --surface-strong: rgba(245, 235, 224, 0.1);
+    --border-soft: rgba(209, 154, 139, 0.3);
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 24px;
+
+    --max-width: 1180px;
+    --header-height: 86px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: var(--text-main);
+    background: radial-gradient(circle at 10% 10%, #4a1111 0%, var(--bg-primary) 45%, #240606 100%);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    color: var(--text-main);
+}
+
+h1 {
+    font-size: clamp(2.3rem, 6vw, 4.6rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3.3rem);
+}
+
+h3 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+p,
+li,
+span,
+a,
+label,
+input,
+textarea,
+button {
+    font-size: clamp(0.95rem, 1.2vw, 1.04rem);
+}
+
+a {
+    color: inherit;
+}

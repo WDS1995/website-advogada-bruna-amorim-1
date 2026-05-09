@@ -1,0 +1,96 @@
+.hero-home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+        linear-gradient(112deg, rgba(42, 7, 7, 0.9), rgba(90, 15, 15, 0.72)),
+        url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1800&q=80") center/cover no-repeat;
+    padding: calc(var(--header-height) + 4rem) 1rem 4rem;
+}
+
+.hero-home::before {
+    content: "";
+    position: absolute;
+    inset: auto -10% 6% auto;
+    width: min(58vw, 580px);
+    height: min(58vw, 580px);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(183, 110, 93, 0.2), transparent 60%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 760px;
+}
+
+.hero-content p {
+    color: var(--text-muted);
+    font-size: clamp(1.02rem, 1.5vw, 1.15rem);
+    margin: 1.1rem 0 1.8rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.hero-internal {
+    margin-top: calc(var(--header-height) - 1rem);
+    padding: 4.5rem 1rem 3rem;
+    background:
+        linear-gradient(120deg, rgba(35, 7, 7, 0.85), rgba(122, 28, 28, 0.48)),
+        url("https://images.unsplash.com/photo-1453873623425-02f974f3ab4e?w=1600&q=80") center/cover no-repeat;
+    border-bottom: 1px solid rgba(209, 154, 139, 0.2);
+}
+
+.hero-internal .container {
+    max-width: 920px;
+}
+
+.hero-internal p {
+    margin-top: 0.6rem;
+    color: var(--text-muted);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+    color: var(--accent-light);
+}
+
+.cta-strip {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(125deg, rgba(90, 15, 15, 0.9), rgba(59, 10, 10, 0.95));
+    border: 1px solid rgba(209, 154, 139, 0.24);
+    box-shadow: 0 18px 34px rgba(42, 7, 7, 0.35);
+}
+
+.cta-strip p {
+    color: var(--text-muted);
+    margin: 0.6rem 0 1.25rem;
+}
+
+@media (max-width: 700px) {
+    .hero-home {
+        padding-top: calc(var(--header-height) + 2.2rem);
+    }
+
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+}
