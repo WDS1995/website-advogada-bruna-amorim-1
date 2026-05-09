@@ -133,6 +133,15 @@ section {
     margin-bottom: 0.8rem;
 }
 
+.footer-brand-logo {
+    display: block;
+    width: min(100%, 210px);
+    border-radius: 12px;
+    margin-bottom: 0.9rem;
+    border: 1px solid rgba(209, 154, 139, 0.28);
+    box-shadow: 0 16px 28px rgba(15, 2, 2, 0.45);
+}
+
 .footer p,
 .footer li,
 .footer a {
@@ -175,5 +184,9 @@ section {
 @media (max-width: 900px) {
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-brand-logo {
+        width: min(100%, 180px);
     }
 }

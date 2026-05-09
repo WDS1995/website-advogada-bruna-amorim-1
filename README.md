@@ -19,6 +19,8 @@ Projeto estatico multipagina (HTML5 + CSS modular + Vanilla JS) criado para o re
 - assets/css/components/animations.css
 - assets/js/menu.js
 - assets/js/scroll.js
+- assets/images/brand/logo-bruna-amorim.jpeg
+- assets/images/profile/bruna-amorim-oliveira.jpeg
 
 ## Como usar
 
@@ -36,12 +38,9 @@ Projeto estatico multipagina (HTML5 + CSS modular + Vanilla JS) criado para o re
 
 ## Pontos para atualizar antes de producao
 
-- Numero de WhatsApp (`https://wa.me/5511911484934`).
-- OAB definitiva.
 - Links reais de Instagram, LinkedIn e Facebook.
 - Endpoint oficial do Formspree em `contato.html`.
-- Endereco real do escritorio no mapa.
-- Foto real da Dra. Bruna (hoje com placeholder Unsplash).
+- Endereco detalhado do escritorio no mapa (se desejar).
 
 ## Verificacao manual sugerida
 
@@ -49,4 +48,3 @@ Projeto estatico multipagina (HTML5 + CSS modular + Vanilla JS) criado para o re
 - Validar contraste no WebAIM (WCAG AA).
 - Conferir menu hamburger e fechamento por overlay.
 - Testar envio do formulario e comportamento de validacao.
-
