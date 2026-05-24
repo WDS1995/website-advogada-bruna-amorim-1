@@ -38,6 +38,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.querySelector("#contact-form");
     const feedback = document.querySelector("#form-feedback");
+    const contactFlag = document.querySelector(".contact-flag-shell");
+
+    if (contactFlag) {
+        const scrollThreshold = Math.min(window.innerHeight * 0.45, 360);
+
+        function updateContactFlag() {
+            contactFlag.classList.toggle("is-visible", window.scrollY > scrollThreshold);
+        }
+
+        updateContactFlag();
+        window.addEventListener("scroll", updateContactFlag, { passive: true });
+    }
 
     if (form) {
         form.addEventListener("submit", function (event) {
