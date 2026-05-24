@@ -8,14 +8,24 @@
 .contact-form-card {
     padding: 1.3rem;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(209, 154, 139, 0.3);
-    background: rgba(245, 235, 224, 0.05);
+    border: 1px solid rgba(209, 154, 139, 0.25);
+    background: #fffdfb;
 }
 
 .contact-list {
     display: grid;
     gap: 0.9rem;
     margin-top: 0.6rem;
+}
+
+.contact-priority-note {
+    margin-top: 0.4rem;
+    color: var(--text-muted);
+}
+
+.contact-priority-cta {
+    margin-top: 0.75rem;
+    margin-bottom: 0.95rem;
 }
 
 .contact-list li {
@@ -42,8 +52,8 @@
     width: 100%;
     padding: 0.78rem 0.82rem;
     border-radius: 10px;
-    border: 1px solid rgba(209, 154, 139, 0.35);
-    background: rgba(42, 7, 7, 0.35);
+    border: 1px solid rgba(209, 154, 139, 0.45);
+    background: #ffffff;
     color: var(--text-main);
 }
 
@@ -54,7 +64,7 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: rgba(245, 235, 224, 0.6);
+    color: rgba(111, 79, 76, 0.7);
 }
 
 .form-feedback {
@@ -68,7 +78,7 @@
     border-radius: var(--radius-md);
     overflow: hidden;
     border: 1px solid rgba(209, 154, 139, 0.25);
-    background: rgba(245, 235, 224, 0.05);
+    background: #fffdfb;
 }
 
 .map-frame iframe,
